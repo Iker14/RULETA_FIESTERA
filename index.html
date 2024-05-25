@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <link rel="stylesheet" type="text/css" href="ruleta.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="ruleta.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="./js/index.js" defer></script>
+	<script src="./js/helpers.js"></script>
+	<title>Ruleta</title>
 </head>
-<title>Ruleta Fiestara</title>
 <body>
-    <div id="wheel" class="wheel">
-    <div class="segment">Opción 1</div>
-    <div class="segment">Opción 2</div>
-    <div class="segment">Opción 3</div>
-    <div class="segment">Opción 4</div>
-    <div id="pointer"></div>
-    </div>
+	<!-- Título -->
+	<h1>¡RULETA FIESTERA!</h1>
+	<div id="container">
+
+		<!-- Marcador -->
+		<div id="marcador">
+			<div id="cartelGanador">
+				<p id="ganadorTexto">¡Click en "Girar" para iniciar!</p>
+			</div>
+		</div>
+
+		<!-- Ruleta -->
+		<div id="ruleta">
+			<!-- <img src="./img/transportador.png" alt=""> -->
+			<div id="sortear"><p>GIRAR</p></div>
+		</div>
+	</div>
+	<!-- <button id="settings">SETTINGS</button> -->
+
+	<!-- Modal -->
+	<dialog>
+		<div id="tituloForm">
+			<p>Nombre</p>
+			<p>Probabilidad (%)</p>
+		</div>
+		<div id="formContainer"></div>
+		<button id="agregar">+</button>
+		<p>Total: <span id="porcentaje"></span>%</p>
+		<button id="aceptar">Cambiar</button>
+		<button id="cancelar">Cancelar</button>
+	</dialog>
+
+	<!-- Footer -->
+	<footer>
+	</footer>
 </body>
 </html>
