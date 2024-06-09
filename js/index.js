@@ -37,7 +37,7 @@ const uno = {
 	probabilidad:30
 }
 const dos = {
-	nombre: "Shot!",
+	nombre: "Tu insta",
 	probabilidad: 25
 }
 const tres = {
@@ -45,7 +45,7 @@ const tres = {
 	probabilidad: 20
 }
 const cuatro = {
-	nombre: "Otra vez!",
+	nombre: "Talento oculto",
 	probabilidad: 25
 }
 
